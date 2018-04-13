@@ -1,0 +1,18 @@
+#eureka、configClient的配置不能放在application.yml里边
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8083
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: configServer #configServer注册在euraka的服务名
+        enabled: true
+      profile: test
+      label: master
+      uri: http://localhost:8082 #configServer地址,默认是localhost:8888
+  application:
+    name: configClient
