@@ -11,4 +11,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jorden2014/config_demo #gitµØÖ·
+          uri: https://github.com/jorden2014/config_demo #gitåœ°å€
