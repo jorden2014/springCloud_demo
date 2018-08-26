@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: docker
+server:
+  port: 8085
