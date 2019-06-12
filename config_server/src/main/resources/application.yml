@@ -11,4 +11,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jorden2014/config_demo #git地址
+#          uri: https://github.com/jorden2014/config_demo #git地址
+          uri: https://gitlab.0easy.com/java/cloud-config-repo.git
+          username: jorden
+          password: Yds15211818173
+          search-paths: aiotcloud
+      label: master

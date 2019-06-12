@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: esJob
+  datasource:
+    password: iot888
+    username: iot
+    url: jdbc:mysql://192.168.0.17:3306/event_log
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+server:
+  port: 9080
+
+elastic-job:
+  serverlists: 192.168.0.16:2181
+  namespace: my-project
